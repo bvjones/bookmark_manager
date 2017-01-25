@@ -7,6 +7,5 @@ feature 'Creating links' do
     click_button 'Save link'
 
     expect(current_path).to eq '/links'
-
   end
 end

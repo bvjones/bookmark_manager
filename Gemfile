@@ -5,10 +5,10 @@ source "http://rubygems.org"
 gem 'data_mapper'
 gem 'dm-migrations'
 gem 'dm-postgres-adapter'
-gem 'pry'
 gem 'rspec'
 gem 'capybara'
 gem 'sinatra'
+gem 'pg'
 
 group :test do
   gem 'database_cleaner'
