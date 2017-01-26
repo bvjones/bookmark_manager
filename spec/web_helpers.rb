@@ -27,3 +27,11 @@ def creating_link_with_multiple_tags
 
   click_button 'Save link'
 end
+
+def sign_up
+  visit '/'
+  expect(page.status_code).to eq(200)
+  fill_in :email,    with: 'ben@example.com'
+  fill_in :password, with: 'BVJ!'
+  click_button 'Submit'
+end
