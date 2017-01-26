@@ -7,6 +7,5 @@ feature 'Viewing links' do
     visit '/links'
     expect(page.status_code).to eq 200
     expect(page).to have_content('Google')
-    DatabaseCleaner.clean
    end
 end
